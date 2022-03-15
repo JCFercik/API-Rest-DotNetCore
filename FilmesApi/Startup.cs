@@ -23,7 +23,7 @@ namespace FilmesApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies()); // Mapeamento das entidades
-            services.AddDbContext<FilmeContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("FilmeConnection")));
+            services.AddDbContext<AppDbContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("CinemaConnection")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
