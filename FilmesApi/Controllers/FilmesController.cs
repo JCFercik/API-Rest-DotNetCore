@@ -3,8 +3,6 @@ using FilmesApi.Data;
 using FilmesApi.Data.Dtos;
 using FilmesApi.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.ComponentModel;
 using System.Linq;
 
 namespace FilmesApi.Controllers

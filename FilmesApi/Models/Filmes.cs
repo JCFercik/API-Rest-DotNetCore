@@ -20,5 +20,6 @@ namespace FilmesApi.Models
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [Range(1, 280 ,ErrorMessage ="{0} de 1 até 280")]
         public int Duracao { get; set; }
+        public int ClassificacaoEtaria { get; set; }
     }
 }
