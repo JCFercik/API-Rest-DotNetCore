@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace FilmesApi.Data.Dtos.Endereco
 {
     public class ReadEnderecoDto
     {
+        [Key]
+        [Required]
+        public int EnderecoId { get; set; }
+        public string Logradouro { get; set; }
+        public string Bairro { get; set; }
+        public int Numero { get; set; }
     }
 }
