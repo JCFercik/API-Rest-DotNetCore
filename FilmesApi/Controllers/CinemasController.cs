@@ -3,10 +3,8 @@ using FilmesApi.Data;
 using FilmesApi.Data.Dtos.Cinema;
 using FilmesApi.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace FilmesApi.Controllers
 {
@@ -40,7 +38,7 @@ namespace FilmesApi.Controllers
         }
 
         [HttpGet("{id}")]
-        private IActionResult ConsultaCinemasPorId(int id)
+        public IActionResult ConsultaCinemasPorId(int id)
         {
             Cinema cinema = _context.Cinemas.FirstOrDefault(cinema => cinema.CinemaId == id);
             if (cinema != null)

@@ -40,7 +40,7 @@ namespace FilmesApi.Controllers
         }
 
         [HttpGet("{id}")]
-        private object ConsultaEnderecoId(int id)
+        public IActionResult ConsultaEnderecoId(int id)
         {
             Endereco endereco = _context.Enderecos.FirstOrDefault(endereco => endereco.EnderecoId == id);
             if (endereco != null)
